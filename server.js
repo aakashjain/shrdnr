@@ -59,11 +59,3 @@ var shrdExists = function(shrd) {
 }
 
 app.listen(process.env.PORT || 8000);
-
-/*
-<textarea id="fe_text" cols="50" rows="3">Copy me!</textarea>
-<p class="align-right">
-<button id="d_clip_button" class="my_clip_button" title="Click me to copy to clipboard." 
-data-clipboard-target="fe_text" data-clipboard-text="Default clipboard text from attribute">
-Copy To Clipboard...</button></p>
-*/
