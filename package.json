@@ -13,8 +13,11 @@
     "npm": "2.13.x"
   },
   "dependencies": {
+    "body-parser": "^1.13.2",
+    "chance": "^0.7.6",
     "ejs": "^2.3.3",
     "express": "^4.13.1",
-    "redis": "^0.12.1"
+    "redis": "^0.12.1",
+    "zeroclipboard": "^2.2.0"
   }
 }

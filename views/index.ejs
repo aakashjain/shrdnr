@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shrdnr.</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+</head>
+<body>
+
+	<div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">Fork me on GitHub</a>
+        </div>
+    </div>
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Shrdnr.</h1>
+			<p>Zip urls</p>
+			<p>
+				<form action="/" method="POST" class="form-inline" role="form">
+					<div class="form-group">
+						<label class="sr-only" for="url">url</label>
+						<input type="url" class="form-control" name="url" placeholder="Enter your URL">
+					</div>
+					<button type="submit" class="btn btn-primary">Shrdn.</button>
+				</form>
+
+				<div style="margin: 10px; height: 20px">
+					<p>
+						<div id="shrd"><%= shrd %></div>
+						<% if(shrd !== '' && shrd !== 'Something went wrong.') { %>
+							<button id="clipboard" class="btn btn-default" title="Copy" data-clipboard-target="shrd" data-clipboard-text="">Copy</button>
+						<% } %>
+					</p>
+				</div>
+			</p>
+		</div>
+	</div>
+
+	<script src="zeroclipboard/ZeroClipboard.min.js"></script>
+	<script>
+		var copier = new ZeroClipboard(document.getElementById('clipboard'));
+	</script>
+
+</body>
+</html>
