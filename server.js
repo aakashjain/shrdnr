@@ -49,8 +49,8 @@ var makeShrd = function() {
 }
 
 var shrdExists = function(shrd) {
-	redis.exists(shrd, function(err, res) {
-		if(res === 0) {
+	redis.exists(shrd, function(err, val) {
+		if(val === 0) {
 			return false;
 		} else {
 			return true;

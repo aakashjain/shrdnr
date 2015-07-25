@@ -4,15 +4,15 @@ html, body{
 
 .jumbotron {
     position: relative;
-    background: url("pattern.png");
-    background-repeat: repeat;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0;
     overflow: hidden;
+    background: url("pattern.png");
+    background-repeat: repeat;
     color: #EEEEEE;
-    display: flex;
-  	align-items: center;
 }
 
 #shrd-area {
